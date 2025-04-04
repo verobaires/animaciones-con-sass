@@ -1,0 +1,51 @@
+.body-gradient{
+    
+    background-color: #cfe3ee;
+background-image: linear-gradient(141deg, #cfe3ee 0%, #8386b1 100%);
+
+main  {    
+    margin: 20px;
+    h1{
+        font-size: 1.15rem!important;
+    }
+
+    h2{
+        font-size: 1.10rem!important;
+    }
+
+    h3{
+        font-size: 1.05rem!important;
+    }
+
+    h4{
+        font-size: 1rem!important;
+    }
+
+    .gradientes {
+        p {
+            padding: 20px 15px;
+        }
+
+        div {
+            margin: 12px 0;
+        }
+
+        //circle , ellipse 300px 200px,
+        .radial {
+            background: radial-gradient(ellipse 300px 200px, #54090440, #381609, #e29c83);
+                    
+            height: 300px;
+
+        }
+
+        .linearRight {
+            background-image: linear-gradient(to right, #654ea3, #ce5b8b, #cec0c6);
+            height: 350px;
+        }
+
+        .linearTop {
+            background: linear-gradient(to top, #2c3e50, #207b89, #4ca1af);
+            height: 400px;
+        }
+    }
+} }

@@ -1,0 +1,41 @@
+.bg-aos{
+    background-color: #1c1a1a;
+    background-image: linear-gradient(123deg, #1c1a1a 0%, #303032 44%, #686363 93%);
+    
+    h1, h2, ol {
+        color: whitesmoke;
+    }
+    
+.aos {
+    margin: 10px;
+
+    div {
+        margin-bottom: 15px;
+        padding: 40px;
+        text-align: justify;
+
+        &:nth-child(1) {
+            background-color: rgba(231, 124, 85, 0.308);
+        }
+
+        &:nth-child(2) {
+            background-color: rgb(141, 204, 146);
+        }
+
+        &:nth-child(3) {
+            background-color: rgb(211, 169, 202);
+        }
+
+        &:nth-child(4) {
+            background-color: rgba(122, 199, 216, 0.658);
+        }
+
+        &:nth-child(5) {
+            background-color: rgba(198, 221, 94, 0.507);
+        }
+
+        &:nth-child(6) {
+            background-color: rgba(166, 122, 204, 0.445);
+        }
+    }
+} }

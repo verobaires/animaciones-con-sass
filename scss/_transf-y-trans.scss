@@ -1,0 +1,61 @@
+main.bg-transf{
+    background-color: #ece4de;
+background-image: linear-gradient(90deg, #ece4de 22%, #f0e3b9 40%, #cf9b3a 96%);
+
+.transformaciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+
+    div {
+        border: 2px double black;
+        margin: 20px 10px;
+        padding: 30px;
+        width: fit-content;
+
+        img {
+            clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+            width: 200px;
+
+            //eje x -- eje y
+            //numeros positivos derecha/abajo
+            //numeros negativos izquierda/arriba
+            &.translate {
+                /*      transition: transform 3s ease-in-out 5ms; */
+
+                &:hover {
+                    transform: translate(30px, 40px);
+                    //si se coloca transition en el hover salta al regreso
+                    transition: transform 3s ease-in-out 5ms;
+                }
+            }
+
+            //siempre en grados
+            //valores positivos rota a la derecha
+            //valores negativos rota a la izquierda
+            &.rotate {
+                transition-property: transform;
+                transition-duration: 2s;
+                transition-timing-function: ease-out;
+                transition-delay: 10ms;
+
+                &:hover {
+                    transform: rotate(90deg);
+                }
+            }
+
+            //primer valor eje y -- segundo valor eje x
+            //+1 agranda, 1 a 0 achica, -1 voltea
+            &.scale:hover {
+                transform: scale(1.5, 1.5);
+            }
+
+            &.skew:hover {
+                transform: skew(5deg, 10deg);
+
+            }
+        }
+    }
+} }

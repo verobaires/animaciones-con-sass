@@ -1,0 +1,77 @@
+.mainKeyframe {
+    background-color: #FFDEE9;
+    background-image: linear-gradient(106deg, #FFDEE9 0%, #B5FFFC 100%);
+    
+    
+    padding-top: 25px;
+    
+    .keyframe {
+        background-color: #010200;
+        width: 50%;
+        border: 2px solid black;
+        border-radius: 15px;
+        padding: 25px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+
+        @media screen and (max-width:576px) {
+            width: 100%;
+        }
+
+
+
+        .fa-solid {
+            font-size: 2rem;
+            animation-name: palpitar;
+            animation-timing-function: ease-in-out;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            /* animation:palpitar ease-in-out 3.5s infinite;   */
+
+            &.icono1 {
+                animation-delay: 0.5s;
+                color: red;
+            }
+
+            &.icono2 {
+                animation-delay: 0.4s;
+                color: green;
+            }
+
+            &.icono3 {
+                animation-delay: 0.2s;
+                color: blueviolet;
+            }
+
+            &.icono4 {
+                animation-delay: 0.1s;
+                color: blue;
+            }
+        }
+    }
+
+    .content {
+        h2 {
+            font-size: 1rem!important;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    }
+}
+
+@keyframes palpitar {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.35);
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}

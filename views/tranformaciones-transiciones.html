@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transformaciones</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Animaciones</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link " href="../index.html">Index</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./gradientes.html">Gradientes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Transition y transform</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="keyframes.html">Keyframes</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                LIBRERIAS
+              </a>
+              <ul class="dropdown-menu">
+                <li> <a class="dropdown-item" href="animista.html"> Animista </a> </li>
+                <li><a class="dropdown-item" href="aos.html">AOS</a></li>
+                <li><a class="dropdown-item" href="animate.html">Animate</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                EJEMPLOS
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="ejemplo-flechas_keyframe.html">Ej keyframe</a></li>
+                <li><a class="dropdown-item" href="./ejemplo-subrayado_hover.html">Ej subrayado</a></li>
+                <li><a class="dropdown-item" href="ejemplo-zapatilla_hover.html">Ej zapatillas</a></li>
+                <li><a class="dropdown-item" href="ejemplo-circulo_imgFondo.html">Ej circulo imagen y texto</a></li>
+                <li><a class="dropdown-item" href="ejemplo-weimaraner.html">Ej Weimaraner</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="bg-transf">
+    <h1 class="m-2 text-center">Transiciones y transformaciones</h1>
+
+    <section class="transformaciones">
+      <div>
+        <h2 class="text-center text-primary-emphasis fw-bold fs-4">Translate</h2>
+        <img class="translate" src="../img/cat-2934720_640.jpg" alt="gatito">
+      </div>
+      <div>
+        <h2 class="text-center text-primary-emphasis fw-bold fs-4">Rotate</h2>
+        <img class="rotate" src="../img/dachshund-1519374_640.jpg" alt="salchica">
+      </div>
+      <div>
+        <h2 class="text-center text-primary-emphasis fw-bold fs-4">Scale</h2>
+        <img class="scale" src="../img/pug.jpg" alt="pug">
+      </div>
+      <div>
+        <h2 class="text-center text-primary-emphasis fw-bold fs-4">Skew</h2>
+        <img class="skew" src="../img/cat-3266673_640.jpg" alt="gatito">
+      </div>
+    </section>
+
+    <section class="p-3">
+      <h2 class="text-center">Transform</h2>
+      <h3 class="text-center">Permite modificar la posición, tamaño, rotación e inclinación de un elemento sin afectar a otros.</h3>
+      <ul>
+        <li>
+          <h3>Translate() - Mueve elemento</h3>
+          <p>transform: translate(x, y)</p>
+          <p>Eje x : Mueve a la derecha (+) o izquierda (-). <br>
+            Eje y : Mueve hacia abajo (+) o arriba (-).</p>
+          <p>transform: translate(50px, 20px); /* Mueve 50px a la derecha y 20px hacia abajo */ <br>
+            transform: translate(-50px, -20px); /* Mueve 50px a la izquierda y 20px hacia arriba */</p>
+        </li>
+
+        <li>
+          <h3>scale(x, y) - Cambia tamaño</h3>
+          <p> El scale() aumenta o reduce el tamaño de un elemento en los ejes X e Y.</p>
+          <p>transform: scale(x, y);</p>
+          <p> x : Escala en horizontal. <br>
+            y : Escala en vertical .</p>
+          <p>transform: scale(2, 1.5); /* Doble de ancho y 1.5 veces más alto */ <br>
+            transform: scale(0.5, 0.5); /* Reduce a la mitad en ambos ejes */ <br>
+            transform: scale(2); /* Escala 2 veces en ambos ejes */:</p>
+          <div>
+            <h4 class="fs-5">A tener en cuenta</h4>
+            <ul>
+              <li>Valores positivos agrandan. </li>
+              <li>Valores menores a 1 reducen el tamaño.</li>
+              <li>Valores negativos invierten el elemento (efecto espejo).</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <h3> rotate(deg) - Gira un elemento </h3>
+          <p> El rotate() gira un elemento alrededor de su centro.</p>
+          <p> transform: rotate(ángulo); </p>
+          <p>Los ángulos se expresan en grados (deg).</p>
+          <ul>
+            <li>Positivos (+) :Giran en sentido horario - derecha</li>
+            <li>Negativos (-) : Giran en sentido antihorario - izquierda</li>
+          </ul>
+
+          <p>transform: rotate(45deg); /* Gira 45° en sentido horario */ <br>
+            transform: rotate(-90deg); /* Gira 90° en sentido antihorario */ <br>
+            💥Por defecto, el centro de rotación es el centro del elemento. Para cambiarlo, usamos transform-origin:</p>
+        </li>
+        <li>
+          <h3>skew(x, y) - Estira elemento</h3>
+          <p>El skew() inclina un elemento sin cambiar su tamaño, deformándolo en los ejes X e Y.</p>
+          <p>transform: skew(x, y);</p>
+          <p>x : Inclina en el eje horizontal. <br>
+            y : Inclina en el eje vertical.</p>
+          <p> transform: skew(30deg, 0); /* Inclina 30° en horizontal */ <br>
+            transform: skew(0, 20deg); /* Inclina 20° en vertical */ <br>
+            transform: skew(15deg, 15deg); /* Inclina en ambos ejes */</p>
+          <ul>
+            <li>Valores positivos → Inclinan hacia la derecha o abajo.</li>
+            <li>Valores negativos → Inclinan hacia la izquierda o arriba.</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="p-3">
+      <table class="table table-striped-columns">
+        <thead>
+          <tr>
+            <th scope="col">Transformacion</th>
+            <th scope="col">Efecto</th>
+            <th scope="col">Valores Positivos</th>
+            <th scope="col">Valores Negativos</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">translate(x, y)</th>
+            <td>Mueve el elemento</td>
+            <td>Derecha / Abajo</td>
+            <td>Izquierda / Arriba</td>
+          </tr>
+          <tr>
+            <th scope="row">scale(x, y)</th>
+            <td>Cambia tamaño</td>
+            <td>Agranda</td>
+            <td>Reduce / Invierte</td>
+          </tr>
+          <tr>
+            <th scope="row">rotate(deg)</th>
+            <td>Gira el elemento</td>
+            <td>Sentido horario</td>
+            <td>Sentido antihorario</td>
+          </tr>
+          <tr>
+            <th scope="row">skew(x, y)</th>
+            <td>Inclina el elemento</td>
+            <td>Derecha / Abajo</td>
+            <td>Izquierda / Arriba</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="p-3">
+      <h2 class="text-center">Transition</h2>
+      <p class="text-center">La propiedad transition permite crear animaciones suaves cuando un estilo cambia. En lugar que el cambio ocurra de forma inmediata, se aplica una transición progresiva.</p>
+      <p>transition: property duration timing-function delay;</p>
+      <ul>
+        <li><span class="fw-bold">Property:</span> Hace referencia a la propiedad que va a trabajar, tambien se puede colocar "all"</li>
+        <li><span class="fw-bold">Duration</span> Tiempo que durara la transicion de inicio a fin, pueden ser s (segundos) o ms (milisegundos)</li>
+        <li>
+          <span class="fw-bold">Timing-Function</span>
+          <p>Define la velocidad del cambio en el tiempo. Es como decirle cómo moverse.</p>
+          <ul>
+            <li>linear	Movimiento constante.
+            <li>ease	Inicio lento, acelera y desacelera.</li>
+            <li>ease-in	Empieza lento y acelera.</li>
+            <li>ease-out	Empieza rápido y desacelera.</li>
+            <li>ease-in-out	Lento al inicio y al final.</li>
+            <li>cubic-bezier(...)	Personalizado con una curva Bézier.</li></li>
+          </ul>
+        </li>
+        <li><span class="fw-bold">Delay:</span> Demora en que la transicion empieza a ejecutarse</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p class="text-center">&#169 2025</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+.bg-animista {
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+
+
+    .animista {
+        text-align: center;
+
+        h2{
+            font-size: 1.25rem;
+        }
+
+        h3{
+            font-size: 1.05rem;
+        }
+       
+        p{
+            margin: 10px;
+            padding: 15px;
+        }
+
+        .swirl-in-fwd {
+            animation: swirl-in-fwd .6s ease-out both
+        }
+
+        .tracking-out-contract {
+            color: rgb(138, 10, 10);
+            animation: tracking-out-contract 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) 3 both;
+        }
+
+        .tracking-out-expand-fwd-top {
+            color: rgb(43, 67, 133);
+            animation: tracking-out-expand-fwd-top 0.5s ease-in-out 4 alternate both;
+        }
+
+        .text-focus-in {
+            color: rgb(218, 82, 165);
+            animation: text-focus-in 1s ease-out 4 reverse both;
+        }
+    }
+
+}
+
+
+
+
+@keyframes swirl-in-fwd {
+    0% {
+        transform: rotate(-540deg) scale(0);
+        opacity: 0
+    }
+
+    100% {
+        transform: rotate(0) scale(1);
+        opacity: 1
+    }
+}
+
+@keyframes tracking-out-contract {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+}
+
+@keyframes tracking-out-expand-fwd-top {
+    0% {
+        transform: translateZ(0) translateY(0);
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0.8;
+    }
+
+    100% {
+        letter-spacing: 1em;
+        transform: translateZ(300px) translateY(-200px);
+        opacity: 0;
+    }
+}
+
+@keyframes text-focus-in {
+    0% {
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        filter: blur(0px);
+        opacity: 1;
+    }
+}

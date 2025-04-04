@@ -1,0 +1,28 @@
+main.bg-weimaraner {
+    background: linear-gradient(to right, rgba(232, 39, 197, 0.5), transparent), url(../img/weimaraner.jpg);
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 576px){
+        height: 95vh;
+        background-position: center;
+    }
+
+    h3 {
+        color: white;
+        font-size: 5rem;
+        font-weight: 900;
+        background: rgba(26, 22, 22, 0.27);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(11.4px);
+        padding: 5px 50px;
+        @media screen and (max-width: 576px){
+            font-size: 2.25rem;
+            padding: 15px 30px;
+        }
+    }
+}
