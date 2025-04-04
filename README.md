@@ -1,4 +1,4 @@
-# ✨ Repositorio de Animaciones CSS
+# Repositorio de Animaciones CSS
 
 Este repositorio contiene ejemplos prácticos sobre cómo aplicar animaciones en CSS utilizando diferentes técnicas y herramientas.
 
@@ -6,9 +6,9 @@ Incluye conceptos fundamentales como `transition`, `transform` y `@keyframes`, a
 
 ---
 
-## 📚 Contenidos
+## Contenidos
 
-### 🔹 Propiedades animadas manualmente
+### Propiedades animadas manualmente
 
 - **`transition`**  
   Aplicada para transiciones suaves entre estados (hover, active, etc.).
@@ -19,7 +19,7 @@ Incluye conceptos fundamentales como `transition`, `transform` y `@keyframes`, a
 - **`@keyframes`**  
   Permite crear animaciones personalizadas paso a paso, controlando su progreso con porcentajes (`0%`, `50%`, `100%`, etc.).
 
-### 🔸 Librerías de animación
+### Librerías de animación
 
 - [**Animate.css**](https://animate.style/)  
   Animaciones predefinidas fáciles de aplicar con clases como `animate__bounce`, `animate__fadeIn`, etc.
@@ -32,19 +32,19 @@ Incluye conceptos fundamentales como `transition`, `transform` y `@keyframes`, a
 
 ---
 
-## 🛠️ Herramientas utilizadas
+## Herramientas utilizadas
 
-- 🪟 **[CSS Glass](https://css.glass/)**  
+-  **[CSS Glass](https://css.glass/)**  
   Se usó para generar un fondo con efecto *glassmorphism* en la sección de Weimarener.
 
-- 🔺 **[Clippy](https://bennettfeely.com/clippy/)**  
+-  **[Clippy](https://bennettfeely.com/clippy/)**  
   Utilizada para dar formato de flecha a imágenes en las secciones de `transition` y `transform`.
 
-- 🎨 **[Grabient](https://www.grabient.com/)**  
+-  **[Grabient](https://www.grabient.com/)**  
   Generador de gradientes personalizados para fondos coloridos en diferentes páginas.
 
 ---
 
-### Si quieren llevarte este proyecto podes usar el siguiente comando: git clone 
+##### Si quieren llevarte este proyecto podes usar el siguiente comando: git clone https://github.com/verobaires/animaciones-con-sass.git
 
 El repositorio se trabaja con sass en cada partial pueden ver los estilos aplicados para cada tema
