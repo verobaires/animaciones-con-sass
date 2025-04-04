@@ -45,6 +45,7 @@ Incluye conceptos fundamentales como `transition`, `transform` y `@keyframes`, a
 
 ---
 
-##### Si quieren llevarte este proyecto podes usar el siguiente comando: `git clone https://github.com/verobaires/animaciones-con-sass.git`
+##### Si quieren llevarte este proyecto podes usar el siguiente comando: 
+`git clone https://github.com/verobaires/animaciones-con-sass.git`
 
 El repositorio se trabaja con sass en cada partial pueden ver los estilos aplicados para cada tema
