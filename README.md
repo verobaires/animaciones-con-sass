@@ -45,6 +45,6 @@ Incluye conceptos fundamentales como `transition`, `transform` y `@keyframes`, a
 
 ---
 
-Si quieren llevarte este proyecto podes usar el siguiente comando:
+### Si quieren llevarte este proyecto podes usar el siguiente comando: git clone 
 
-
+El repositorio se trabaja con sass en cada partial pueden ver los estilos aplicados para cada tema
