@@ -1,0 +1,44 @@
+  body.ejemplo-gradienteKeyframe {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin: 20px;
+      text-align: center;
+      background-color: #464242;
+      color: white;     
+       .contenedor-gradientekeyframe {
+          background-color: #261e44;
+          width: fit-content;
+          margin: 30px auto;
+          padding: 0 54px;
+
+          .txt-gradientekeyframe {
+              font-size: 90px;
+              font-weight: 900;
+              background: linear-gradient(270deg, red, orange, yellow, green, blue, violet);
+              background-size: 600% 600%;
+              animation-name: moverGradiente;
+              animation-duration: 8s;
+              animation-iteration-count: infinite;
+              animation-timing-function: linear;
+              background-clip: text;
+              color: transparent;
+              padding: 40px;
+              margin: auto;
+          }
+          
+      }
+  }
+//declaracino de keyframe
+@keyframes moverGradiente {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
