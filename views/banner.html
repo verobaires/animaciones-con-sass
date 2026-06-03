@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo Texto circular</title>
+    <title>Ejemplo Banner</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
@@ -56,10 +56,11 @@
                                 <li><a class="dropdown-item" href="ejemplo-flechas_keyframe.html">Ej keyframe</a></li>
                                 <li><a class="dropdown-item" href="./ejemplo-subrayado_hover.html">Ej subrayado</a></li>
                                 <li><a class="dropdown-item" href="ejemplo-zapatilla_hover.html">Ej zapatillas</a></li>
-                                <li><a class="dropdown-item active" aria-current="page" href="ejemplo-circulo_imgFondo.html">Ej circulo imagen y texto</a></li>
-                                <li><a class="dropdown-item" href="ejemplo-weimaraner.html">Ej Weimaraner</a></li>
+                                <li><a class="dropdown-item" href="ejemplo-circulo_imgFondo.html">Ej circulo imagen y
+                                        texto</a></li>
+                                <li><a class="dropdown-item active" aria-current="page" href="ejemplo-weimaraner.html">Ej Weimaraner</a></li>
                                 <li><a class="dropdown-item" href="ejemplo-gradiente_keyframe.html">Ej Texto animado</a></li>
-                                  <li><a class="dropdown-item" href="./banner.html">Ej Banner</a></li>
+                                   <li><a class="dropdown-item" href="./banner.html">Ej Banner</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -67,25 +68,43 @@
             </div>
         </nav>
     </header>
-    <main class="contenedor-principal">
-    <div class="contenedor-circulo">
-        <div class="semicirculo-texto">
-            <div class="texto">
-                <p>Novedades</p>
-            </div>
-        </div>
+
+<main class="banner-contenedor ">
+  <div class="banner-contenido">
+    <div class="banner-bloque">
+      <h3> 
+        ▪ HTML5 ▪ CSS ▪ Bootstrap ▪ Flexbox ▪ Grid ▪ Animaciones ▪ Git ▪ Github ▪ SASS ▪ SEO ▪ Vercel ▪ Netlify ▪ 
+      </h3>
     </div>
+    <div class="banner-bloque">
+      <h3> 
+          HTML5 ▪ CSS ▪ Bootstrap ▪ Flexbox ▪ Grid ▪ Animaciones ▪ Git ▪ Github ▪ SASS ▪ SEO ▪ Vercel ▪ Netlify ▪ 
+      </h3>
+    </div>
+  </div>
+
+  <div class="explicacion mt-4">
+    <h2>Porque usamos translate3d</h2>
+    <p>Usamos translate3d para engañar activamente al navegador. Aunque estemos moviendo el texto solo de izquierda a derecha (en dos dimensiones), poner un valor en el tercer eje (Z) activa la aceleración por hardware, logrando que el carrusel ruede a 60 cuadros por segundo, suave </p>
+
+<h2 class="mt-4">¿Cómo funciona internamente?</h2>
+<p>La propiedad recibe tres coordenadas: translate3d(X, Y, Z).</p>
+
+<p>Eje X (Horizontal): Controla el movimiento de izquierda a derecha. En nuestro carrusel usamos -50% para desplazarlo hacia la izquierda exactamente la mitad de su propio ancho.</p>
+
+<p>Eje Y (Vertical): Controla el movimiento de arriba hacia abajo. Lo dejamos en 0 porque no queremos que el banner suba ni baje.</p>
+
+<p>Eje Z (Profundidad): Controla qué tan "cerca" o "lejos" está el objeto de la pantalla. Aunque lo dejamos en 0, su sola presencia despierta a la GPU para procesar la animación en un entorno de tres dimensiones.</p>
+  </div>
 </main>
-
-<footer>
-    <p class="text-center">&#169 2025</p>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-crossorigin="anonymous"></script>
-
-
+    
+    <footer>
+        <p class="text-center">&#169 2025</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    
 </body>
-
 </html>

@@ -1,0 +1,45 @@
+.banner-contenedor {
+    overflow: hidden;
+    background: #111;
+    color: #fff;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.banner-contenido {
+    display: flex;
+    width: max-content;
+    flex-wrap: nowrap;
+    padding: 30px;
+    background: #8080807d;
+    animation: carrusel-infinito 20s linear infinite;
+}
+
+.banner-bloque {
+    flex-shrink: 0;
+    /* Clave: evita que el navegador  deforme el texto */
+    padding-right: 50px;
+    /* Un pequeño espacio para que no se pegue el final con el principio */
+}
+
+.banner-bloque h3 {
+    margin: 0;
+    white-space: nowrap;
+    /* para que no queden palabras sueltas */
+}
+
+.explicacion {
+    display: flex;
+    flex-direction: column;
+    align-items:stretch;
+   }
+
+@keyframes carrusel-infinito {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-50%, 0, 0);
+    }
+}
