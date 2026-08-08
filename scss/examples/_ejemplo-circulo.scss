@@ -1,5 +1,6 @@
 /* KEYFRAMES */
-
+@use '../base/variables' as *;
+@use '../base/helpers' as *;
 main.contenedor-principal {
     display: flex;
     justify-content: center;
@@ -96,4 +97,11 @@ main.contenedor-principal {
         }
     }
 
-    
+main.contenedor-principal {
+  background-color: $clr-bg;
+}
+
+main.contenedor-principal .contenedor-circulo {
+  @extend %glass-panel;
+  box-shadow: $shadow-lg, $shadow-glow;
+}

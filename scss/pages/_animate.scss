@@ -1,0 +1,25 @@
+@use '../base/variables' as *;
+@use '../base/helpers' as *;
+
+/* .bg-animate {
+    background-color: #85FFBD;
+    background-image: linear-gradient(17deg, #85FFBD 0%, #ececd1 60%);
+} */
+
+.bg-animate {
+  @include dark-reset;
+}
+
+.bg-animate h1,
+.bg-animate h2 {
+  color: $text-primary;
+}
+
+.bg-animate section ol {
+  color: $clr-emerald;
+}
+
+.bg-animate p {
+  color: $text-secondary;
+}
+

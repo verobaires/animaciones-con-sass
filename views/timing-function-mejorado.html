@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timing Function</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/29c3be7601.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body class="ejemplo-timing">
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">✦ Animaciones</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Index</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gradientes.html">Gradientes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tranformaciones-transiciones.html">Transition y transform</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="keyframes.html">Keyframes</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                LIBRERIAS
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="animista.html">Animista</a></li>
+                <li><a class="dropdown-item" href="aos.html">AOS</a></li>
+                <li><a class="dropdown-item" href="animate.html">Animate</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                EJEMPLOS
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="ejemplo-flechas_keyframe.html">Ej keyframe</a></li>
+                <li><a class="dropdown-item" href="./ejemplo-subrayado_hover.html">Ej subrayado</a></li>
+                <li><a class="dropdown-item" href="ejemplo-zapatilla_hover.html">Ej zapatillas</a></li>
+                <li><a class="dropdown-item" href="ejemplo-circulo_imgFondo.html">Ej circulo imagen y texto</a></li>
+                <li><a class="dropdown-item" href="ejemplo-weimaraner.html">Ej Weimaraner</a></li>
+                <li><a class="dropdown-item" href="ejemplo-gradiente_keyframe.html">Ej Texto animado</a></li>
+                <li><a class="dropdown-item" href="banner.html">Ej Banner</a></li>
+                <li><a class="dropdown-item active" aria-current="page" href="timing-function-mejorado.html">Ej
+                    Timing</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="timing-card">
+      <div>
+        <h1>Timing Function Race</h1>
+        <p>Visualiza cómo cambian las curvas de velocidad según la función de tiempo. Cada animal recorre la misma
+          distancia,
+          pero el ritmo de la animación cambia según la función aplicada.</p>
+      </div>
+      <section class="container box">
+        <div class="row p-2 m-2 align-items-center timing-row">
+          <div class="col-2">
+            <h2>linear</h2>
+          </div>
+          <div class="col-10 lineaCarrera"><i class="fa-solid fa-dove correr linear"></i></div>
+        </div>
+
+        <div class="row p-2 m-2 align-items-center">
+          <div class="col-2">
+            <h2>ease</h2>
+          </div>
+          <div class="col-10 lineaCarrera"><i class="fa-solid fa-cat correr ease"></i></div>
+        </div>
+
+        <div class="row p-2 m-2align-items-center">
+          <div class="col-2">
+            <h2>ease-in</h2>
+          </div>
+          <div class="col-10 lineaCarrera"><i class="fa-solid fa-dog correr ease-in"></i></div>
+        </div>
+
+        <div class="row m-2 p-2 align-items-center">
+          <div class="col-2">
+            <h2>ease-out</h2>
+          </div>
+          <div class="col-10 lineaCarrera"><i class="fa-solid fa-frog correr ease-out"></i></div>
+        </div>
+
+        <div class="row p-2 align-items-center">
+          <div class="col-2">
+            <h2>ease-in-out</h2>
+          </div>
+          <div class="col-10 lineaCarrera"><i class="fa-solid fa-dragon correr ease-in-out"></i></div>
+        </div>
+
+        <div class="row p-2 m-2 align-items-center">
+          <div class="col-2">
+            <h2>steps(4,end)</h2>
+          </div>
+          <div class="col-10 lineaCarrera"><i class="fa-solid fa-cow correr steps"></i></div>
+        </div>
+
+        <div class="row p-2 m-2 align-items-center">
+          <div class="col-2">
+            <h2>cubic-bezier</h2>
+          </div>
+          <div class="col-10 lineaCarrera"><i class="fa-solid fa-horse correr cubic"></i></div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+   <footer>
+      <p class="text-center">&#169 2026</p>
+   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

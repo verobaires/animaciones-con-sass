@@ -1,0 +1,203 @@
+@use '../base/variables' as *;
+@use '../base/helpers' as *;
+
+body.ejemplo-timing {
+  min-height: 100vh;
+  background: linear-gradient(135deg, rgba(13, 13, 20, 0.9), rgba(13, 13, 20, 0.98)),
+    linear-gradient(135deg, rgba(6, 182, 212, 0.18), rgba(139, 92, 246, 0.22));
+  color: $text-primary;
+
+  main {
+    padding: 3rem 1.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    align-items: center;
+  }
+
+  .timing-card {
+    @extend %glass-panel;
+    width: 100%;
+    background: rgba(15, 15, 24, 0.9);
+    border: 1px solid $glass-border;
+    border-radius: $radius-xl;
+    padding: 2.25rem;
+    box-shadow: $shadow-md;
+
+
+    h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin: 0;
+      color: $text-primary;
+      @include gradient-text;
+    }
+
+    h2 {
+      font-size: 1.15rem;
+    }
+
+    p {
+      color: $text-secondary;
+      max-width: 720px;
+      margin: 0;
+    }
+
+    .box{
+      margin: 1rem auto ;
+    }
+
+    .timing-row:last-child {
+      border-bottom: none;
+    }
+
+    .timing-label {
+      color: $clr-cyan;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.95rem;
+    }
+
+    .lineaCarrera {
+      position: relative;
+      width: 100%;
+      min-height: 64px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(139, 92, 246, 0.12);
+      overflow: hidden;
+    }
+
+    .lineaCarrera {
+      position: relative;
+      width: 100%;
+      min-height: 64px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(139, 92, 246, 0.12);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+    }
+
+    .correr {
+      position: absolute;
+      left: 0.75rem;
+      top: 50%;
+      animation-name: carrera;
+      animation-duration: 7s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  /* iconos */
+  .fa-solid {
+    font-size: 3.5rem;
+
+  }
+
+  /* Colores de cada animal */
+  .fa-dove {
+    color: $dove;
+  }
+
+  .fa-cat {
+    color: $cat;
+  }
+
+  .fa-dog {
+    color: $dog;
+  }
+
+  .fa-frog {
+    color: $frog;
+  }
+
+  .fa-dragon {
+    color: $dragon;
+  }
+
+  .fa-cow {
+    color: $cow;
+  }
+
+  .fa-horse {
+    color: $horse;
+  }
+
+
+
+  .timing-card .correr.linear {
+    animation-timing-function: linear;
+  }
+
+  .timing-card .correr.ease {
+    animation-timing-function: ease;
+  }
+
+  .timing-card .correr.ease-in {
+    animation-timing-function: ease-in;
+  }
+
+  .timing-card .correr.ease-out {
+    animation-timing-function: ease-out;
+  }
+
+  .timing-card .correr.ease-in-out {
+    animation-timing-function: ease-in-out;
+  }
+
+  .timing-card .correr.steps {
+    animation-timing-function: steps(4, end);
+  }
+
+  .timing-card .correr.cubic {
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+
+  .timing-card .timing-icon {
+    font-size: 1.7rem;
+  }
+
+  .timing-card .linear .timing-icon {
+    color: #f0d047;
+  }
+
+  .timing-card .ease .timing-icon {
+    color: #7dd3fc;
+  }
+
+  .timing-card .ease-in .timing-icon {
+    color: #c084fc;
+  }
+
+  .timing-card .ease-out .timing-icon {
+    color: #34d399;
+  }
+
+  .timing-card .ease-in-out .timing-icon {
+    color: #fb7185;
+  }
+
+  .timing-card .steps .timing-icon {
+    color: #f59e0b;
+  }
+
+  .timing-card .cubic .timing-icon {
+    color: #8b5cf6;
+  }
+}
+
+@keyframes carrera {
+  from {
+    transform: translate(0, -50%);
+    /* arranca desde la izq, se centra verticalmente */
+  }
+
+  to {
+    transform: translate(calc(100vw - 50px), -50%);
+    /* se mueve a la derecha y descuenta el tamaño del icono */
+  }
+}

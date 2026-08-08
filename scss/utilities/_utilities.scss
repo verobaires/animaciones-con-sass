@@ -1,0 +1,20 @@
+@use '../base/variables' as *;
+
+.text-gradient {
+  background: $gradient-brand;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* para pisar el tema dark de Bootstrap */
+.text-dark     { color: $text-primary !important; }
+.text-muted    { color: $text-muted !important; }
+.text-success  { color: $clr-emerald !important; }
+.text-info-emphasis { color: $clr-cyan !important; }
+.text-primary-emphasis { color: $clr-violet !important; }
+
+/* para pisar fondos de Bootstrap  */
+.bg-dark          { background-color: $clr-surface !important; }
+.bg-body-tertiary { background-color: transparent !important; }
+

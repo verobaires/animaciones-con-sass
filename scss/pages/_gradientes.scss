@@ -1,25 +1,24 @@
-.body-gradient {
+@use '../base/variables' as *;
 
-    background-color: #cfe3ee;
-    background-image: linear-gradient(141deg, #cfe3ee 0%, #8386b1 100%);
+.body-gradient {
 
     main {
         margin: 20px;
 
         h1 {
-            font-size: 1.15rem !important;
+            font-size: 1.15rem;
         }
 
         h2 {
-            font-size: 1.10rem !important;
+            font-size: 1.10rem;
         }
 
         h3 {
-            font-size: 1.05rem !important;
+            font-size: 1.05rem;
         }
 
         h4 {
-            font-size: 1rem !important;
+            font-size: 1rem;
         }
 
         .gradientes {
@@ -50,3 +49,22 @@
         }
     }
 }
+//nuevo codigo
+.gradientes-info-card {
+    background: rgba(139, 92, 246, 0.07);
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    border-radius: $radius-md;
+    padding: 1.25rem 1.5rem;
+    margin: 1.25rem 0;
+
+    h3 {
+    color: $clr-violet;
+    margin-top: 0;
+    }
+    p {
+    color: $text-secondary;
+    margin-bottom: 0.5rem;
+    ul { color: $text-secondary; }
+}
+}
+

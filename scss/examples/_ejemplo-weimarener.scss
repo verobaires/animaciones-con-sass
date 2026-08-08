@@ -1,3 +1,4 @@
+@use '../base/variables' as *;
 main.bg-weimaraner {
     background: linear-gradient(to right, rgba(232, 39, 197, 0.5), transparent), url(../img/weimaraner.jpg);
     height: 80vh;

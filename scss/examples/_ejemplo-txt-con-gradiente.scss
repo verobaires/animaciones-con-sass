@@ -1,11 +1,12 @@
-  body.ejemplo-gradienteKeyframe {
+@use '../base/variables' as *;
+body.ejemplo-gradienteKeyframe {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       margin: 20px;
       text-align: center;
-      background-color: #464242;
+    
       color: white;     
        .contenedor-gradientekeyframe {
-          background-color: #261e44;
+          background-color:#00eae3;
           width: fit-content;
           margin: 30px auto;
           padding: 0 54px;

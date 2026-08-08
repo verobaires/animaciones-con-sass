@@ -1,0 +1,72 @@
+@use '../base/variables' as *;
+@use '../base/helpers' as *;
+
+main.bg-transf {
+  @include dark-reset;
+
+  .transformaciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 85%;
+    margin: 0 auto;
+
+    div {
+      @extend %glass-panel;
+      border-radius: $radius-lg;
+      transition: all $transition;
+      margin: 20px 10px;
+      padding: 30px;
+      width: fit-content;
+
+      h2 {
+        color: $clr-violet;
+      }
+
+      &:hover {
+        border-color: $clr-border-hover;
+        box-shadow: 0 0 20px rgba(139, 92, 246, 0.15);
+      }
+
+      img {
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+        width: 200px;
+
+        // eje x -- eje y
+        // numeros positivos derecha/abajo
+        // numeros negativos izquierda/arriba
+        &.translate {
+          &:hover {
+            transform: translate(30px, 40px);
+            transition: transform 3s ease-in-out 5ms;
+          }
+        }
+
+        // siempre en grados
+        // valores positivos rota a la derecha
+        // valores negativos rota a la izquierda
+        &.rotate {
+          transition-property: transform;
+          transition-duration: 2s;
+          transition-timing-function: ease-out;
+          transition-delay: 10ms;
+
+          &:hover {
+            transform: rotate(90deg);
+          }
+        }
+
+        // primer valor eje y -- segundo valor eje x
+        // +1 agranda, 1 a 0 achica, -1 voltea
+        &.scale:hover {
+          transform: scale(1.5, 1.5);
+        }
+
+        &.skew:hover {
+          transform: skew(5deg, 10deg);
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,156 @@
+@use '../base/variables' as *;
+@use '../base/helpers' as *;
+
+.mainKeyframe {
+  background-color: #FFDEE9;
+  background-image: linear-gradient(106deg, #FFDEE9 0%, #B5FFFC 100%);
+  padding-top: 25px;
+
+  .keyframe {
+    @extend %glass-panel;
+    border-radius: 15px;
+    background-color: #010200;
+    width: 50%;
+    padding: 25px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+
+    @media screen and (max-width: 576px) {
+      width: 100%;
+    }
+
+    .fa-solid {
+      font-size: 2rem;
+      animation-name: palpitar;
+      animation-timing-function: ease-in-out;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      /* animation:palpitar ease-in-out 3.5s infinite; */
+
+      &.icono1 {
+        animation-delay: 0.5s;
+        color: red;
+      }
+
+      &.icono2 {
+        animation-delay: 0.4s;
+        color: green;
+      }
+
+      &.icono3 {
+        animation-delay: 0.2s;
+        color: blueviolet;
+      }
+
+      &.icono4 {
+        animation-delay: 0.1s;
+        color: blue;
+      }
+    }
+  }
+
+  .content {
+    h2 {
+      font-size: 1rem;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+  }
+}
+
+@keyframes palpitar {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.35);
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+@keyframes hero-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+//nuevo codigo
+.table,
+.page-content .table {
+    color: $text-primary;
+    border-color: $glass-border;
+    font-size: 0.875rem;
+    margin-bottom: 2rem;
+}
+
+.table {
+     tbody tr:hover td {
+  background: rgba(139,92,246,0.06);
+  color: $text-primary;
+}
+    th {
+        background: rgba(139, 92, 246, 0.12);
+        color: $clr-violet;
+        font-weight: 600;
+        border-color: $glass-border;
+        font-size: 0.82rem;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        padding: 0.75rem 1rem;
+    }
+
+    td {
+        background: rgba(255, 255, 255, 0.02);
+        border-color: $glass-border;
+        color: $text-secondary;
+        padding: 0.6rem 1rem;
+        vertical-align: middle;
+    }
+}
+
+//colores de fils y columnas de tabla
+.table-striped-columns > tbody > tr > td:nth-of-type(odd),
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  background: rgba(255,255,255,0.03);
+}
+
+.mainKeyframe {
+  @include dark-reset;
+padding-top: 0;
+}
+
+.mainKeyframe .keyframe {
+  @extend %glass-panel;
+  border-radius: $radius-xl;
+  padding: 2rem;
+  margin: 2rem auto;
+}
+
+.mainKeyframe .content h2 {
+  font-family: "Inter", sans-serif;
+  font-size: inherit;
+  color: $text-secondary;
+}
+
+body.ejemplo-gradienteKeyframe {
+  background-color: $clr-bg;
+  color: $text-primary;
+}
+
+body.ejemplo-gradienteKeyframe .contenedor-gradientekeyframe {
+  @extend %glass-panel;
+  border-radius: $radius-xl;
+}

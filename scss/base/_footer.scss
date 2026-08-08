@@ -1,0 +1,13 @@
+@use './variables' as *;
+
+footer {
+    background: rgba(13, 13, 20, 0.9);
+    border-top: 1px solid $glass-border;
+    padding: 1.5rem;
+    margin-top: auto;
+    p {
+        color: $text-muted !important;
+        font-size: 0.8rem;
+        letter-spacing: 0.05em;
+    }
+}

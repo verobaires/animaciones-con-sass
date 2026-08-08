@@ -1,0 +1,27 @@
+@use "./variables" as *;
+
+/// Reusable glass-style card panel for dark surface cards.
+@mixin glass-panel($radius: $radius-lg, $shadow: $shadow-md, $border: $glass-border, $background: rgba(255, 255, 255, 0.03)) {
+  background: $background;
+  border: 1px solid $border;
+  border-radius: $radius;
+  box-shadow: $shadow;
+}
+
+/// Reset the named section background to the dark theme base.
+@mixin dark-reset {
+  background-color: $clr-bg;
+  background-image: none;
+}
+
+/// Use gradient brand text styling consistently.
+@mixin gradient-text {
+  background: $gradient-brand;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+%glass-panel {
+  @include glass-panel();
+}
